@@ -40,9 +40,8 @@ jobs:
       - name: Reproduce and attest
         env:
           # Hardcoded (not an input) so the OIDC token only ever reaches Vega.
-          # This reproducer attests to staging; the production reproducer points
-          # at https://vega-cache.dev.
-          VEGA_URL: "https://vega-cache-staging.ad-astra-computing-inc.workers.dev"
+          # This reproducer attests to production.
+          VEGA_URL: "https://vega-cache.dev"
           VEGA_FLAKE_REF: ${{ inputs.flake_ref }}
           VEGA_ATTR: ${{ inputs.attr }}
           VEGA_REV: ${{ inputs.rev }}
