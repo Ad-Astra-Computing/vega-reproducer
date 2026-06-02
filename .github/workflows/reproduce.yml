@@ -26,7 +26,7 @@ jobs:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           repository: Ad-Astra-Computing/vega-agent
-          ref: a53910ea6aca6cd61f7aa8781fc9bf601301c0af
+          ref: dee71f11ee31a13c3a4c42143e712376fb4b3f1a # v0.4.2
           persist-credentials: false
       - uses: DeterminateSystems/nix-installer-action@ef8a148080ab6020fd15196c2084a2eea5ff2d25 # v22
         with:
