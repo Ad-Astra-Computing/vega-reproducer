@@ -24,7 +24,7 @@ jobs:
     steps:
       # Check out the agent code (pinned), not this repo; this repo holds only
       # the workflow. persist-credentials:false so no token is left on disk.
-      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
         with:
           repository: Ad-Astra-Computing/vega-agent
           ref: bcb0fa68476f6621fb455800e696758b5a965094 # subflake reproduction
