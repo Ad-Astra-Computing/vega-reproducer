@@ -42,7 +42,7 @@ jobs:
           esac
       # Check out the agent code (pinned), not this repo; this repo holds only the
       # workflow. persist-credentials:false so no token is left on disk.
-      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: Ad-Astra-Computing/vega-agent
           ref: 7c37e25ed66161c3711d05f2648ad93eb81aa3b7 # v0.13.0
