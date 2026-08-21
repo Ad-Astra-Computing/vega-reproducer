@@ -1,7 +1,12 @@
+# Actions are pinned to commit SHAs, so nothing moves under this lane on its
+# own. Dependabot is what then keeps them from going stale.
+#
+# It cannot see the vega-agent pin: that is a `ref:` inside a checkout step, not
+# a `uses:`. agent-pin.yml watches that one.
 version: 2
 updates:
-  # Keep the SHA-pinned actions current so pinning stays secure without going stale.
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
-      interval: weekly
+      interval: monthly
+    open-pull-requests-limit: 5
